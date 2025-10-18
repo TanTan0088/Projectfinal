@@ -1,0 +1,586 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body {
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    color: #fff;
+}
+
+/* hed */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background: rgba(0,0,0,0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+.hamburger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color:pink;
+}
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    transition: 0.3s;
+}
+
+
+nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background-color: cadetblue;
+    display: none;
+    flex-direction: column;
+    width: 200px;
+    color: pink;
+}
+nav a {
+    padding: 15px;
+    border-bottom: none; 
+    color: aquamarine;
+    text-decoration: none; 
+}
+/*lines something remobed*/
+a, a:link, a:visited {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
+    outline: none;
+    opacity: 0.9;
+}
+
+
+section {
+    padding: 60px 30px;
+}
+section h2 {
+    margin: 0 auto 20px auto;
+    font-size: 30px;
+    border-bottom: 2px solid #fff;
+    display: table;
+    padding-bottom: 5px;
+    background: linear-gradient(to right, #212121, #121212);
+    border-radius: 10px;
+}
+
+p{
+    font-size: 20px;
+    background: linear-gradient(to right, #898989, #0072ff);
+    color: black;
+    border-radius: 10px;
+}
+
+.play{
+    background-color: crimson;
+    border-radius: 5px;
+}
+.Tk{
+    background-color: darkgoldenrod;
+    border-radius: 5px;
+}
+
+
+/* resue/cv */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color:black;  
+}
+
+#resume{
+background-image: url(imgss/bg1.jpg);
+
+background-position: contain;
+}
+td, th {
+    padding: 9px;
+    border: 1px solid black;
+    font-size: 10px;
+}
+.resume-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    background-position: center;
+    
+}
+
+/* educ */
+.education-item1 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.education-item img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.education-item1:hover {
+    background-image: url(imgss/spedlogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.education-item2 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.education-item img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+.education-item2:hover {
+    background-image: url(imgss/mnhslogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: black;
+}
+
+.education-item img {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 50px;
+    height: 50px;
+    display: none;
+}
+
+.education-item3 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.education-item3:hover {
+    background-image: url(imgss/znhswlogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: -1px 1px 0 black, 1px -1px 0 black, 1px 1px 0 black;
+}
+
+.education-item4 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.education-item4:hover {
+    background-image: url(imgss/dssclogo.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    text-shadow: -1px 1px 0 black, 1px -1px 0 black, 1px 1px 0 black;
+}
+
+/* ecp */
+.experience-item {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.1);
+    position: relative;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.experience-item .desc {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url(imgss/exppic.gif);
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.experience-item:hover .desc {
+    display: block;
+    z-index: 15;
+}
+
+/* pro */
+.project-item1 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.lol {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width: 200px;
+    height: 150px;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.oler{
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    display: none;
+    transition: all 0.5s ease;
+}
+.project-item1:hover .lol{
+    display: block;
+    border-radius: 10px;
+}
+.project-item1:hover .oler{
+    display: block;
+    border-radius: 10px;
+}
+
+.project-item2 {
+    margin-bottom: 20px;
+    padding: 15px;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+}
+.lols {
+    position: absolute;
+    top: -200px;
+    left: 0;
+    width:200px;
+    height: 150px;
+    display: none;
+    transition: all 0.5s ease;
+}
+
+.olers{
+    position: absolute;
+    top: -200px;
+    right: 0;
+    width: 200px;
+    height: 150px;
+    display: none;
+    transition: all 0.5s ease;
+}
+.project-item2:hover .lols{
+    display: block;
+    border-radius: 10px;
+}
+.project-item2:hover .olers{
+    display: block;
+    border-radius: 10px;
+}
+
+/* lwb act */
+.lab-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.lab-item1 {
+    flex: 1 1 150px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+}
+.lab-item1:hover {
+    flex-basis: 40%;
+    background-image: url(imgss/hovers.png);
+    width: 1000px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+}
+.lab-item2 {
+    flex: 1 1 150px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+}
+.lab-item2:hover {
+    flex-basis: 40%;
+    background-image: url(imgss/shows.png);
+    width: 1000px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+}
+.lab-item3 {
+    flex: 1 1 150px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+}
+.lab-item3:hover {
+    flex-basis: 40%;
+    background-image: url(imgss/tog.png);
+    width: 1000px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+    
+}
+.lab-item4 {
+    flex: 1 1 150px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+}
+.lab-item4:hover {
+    flex-basis: 40%;
+    background-image: url(imgss/cli.png);
+    width: 1000px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+}
+.lab-item5 {
+    flex: 1 1 150px;
+    padding: 20px;
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    border-radius: 10px;
+    transition: background 0.3s;
+
+}
+.lab-item5:hover {
+    flex-basis: 40%;
+    background-image: url(imgss/grodomz.png);
+    width: 1000px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    color: black;
+}
+
+/* foot*/
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 13px;
+    background: rgba(0,0,0,0.3);
+}
+
+/* aside bar but pic gallery  fam*/
+.family-aside {
+    position: fixed;
+    right: 16px;
+    top: 120px;
+    width: 300px; /* increased width */
+    background: rgba(255,255,255,0.06);
+    color: #fff;
+    padding: 12px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.45);
+    z-index: 1200;
+}
+.family-aside.collapsed {
+    transform: translateX(240px);
+    opacity: 0;
+    pointer-events: none;
+}
+
+.family-toggle{
+    position: fixed;
+    right: 8px;
+    top: 120px;
+    width: 34px;
+    height: 34px;
+    border-radius: 8px;
+    background: rgba(0,0,0,0.45);
+    color: #fff;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1300;
+    transition: transform 0.25s ease, background 0.2s ease;
+}
+.family-toggle:hover{ background: rgba(0,0,0,0.6); }
+.family-toggle .arrow{ display:block; transform: rotate(90deg); transition: transform 0.25s ease; }
+.family-aside.collapsed + .family-toggle .arrow{ transform: rotate(-90deg); }
+
+.family-aside{
+    transition: transform 0.35s ease, opacity 0.25s ease;
+}
+
+@media (max-width: 767px){
+    .family-aside{
+        transform: translateX(260px);
+        opacity: 0;
+        pointer-events: none;
+        width: 200px;
+        top: 100px;
+        right: 8px;
+    }
+  
+    .family-aside:not(.collapsed){
+        transform: translateX(0);
+        opacity: 1;
+        pointer-events: auto;
+    }
+  
+    .family-toggle{ display: flex; }
+}
+.family-aside h3{
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.family-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+.fam-item{
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.fam-item img{
+    width: 100%;
+    height: 110px; /* taller images */
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 6px auto;
+}
+
+/* Shapes */
+.shape-circle img{ border-radius: 50%; }
+.shape-rounded img{ border-radius: 12px; }
+.shape-square img{ border-radius: 2px; }
+.shape-pill img{ border-radius: 40px; }
+.shape-diamond img{
+    transform: rotate(45deg);
+    width: 90%;
+    margin: 0 auto 6px auto;
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.shape-diamond figcaption{ transform: rotate(-45deg); display:block; margin-top:-6px; }
+.shape-triangle img{
+    width: 100%;
+    height: 0;
+    padding-bottom: 80%;
+    object-fit: cover;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+/* endd */
+
+/* ads on screen*/
+.floating-ad{
+    position: fixed;
+    right: 18px;
+    bottom: 18px;
+    width: 280px;
+    max-width: calc(100% - 36px);
+    z-index: 99999;
+    display: none; 
+}
+.floating-ad.show{ display: block; }
+.floating-ad .inner{
+    background: #fff;
+    color: #000;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(0,0,0,0.6);
+    transform: translateY(10px) scale(0.98);
+    opacity: 0;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+.floating-ad.show .inner{ transform: translateY(0) scale(1); opacity: 1; }
+.floating-ad img{ width: 100%; height: 160px; object-fit: cover; display:block; }
+.floating-ad .close{
+    position: absolute; right: 8px; top: 8px; background: rgba(0,0,0,0.45); color:#fff; border:none; width:30px; height:30px; border-radius:6px; cursor:pointer;
+}
+.floating-ad .caption{ padding: 8px 12px; font-size: 14px; }
+
+/* ads to a small screen */
+@media (max-width: 420px){
+    .floating-ad{ right: 50%; transform: translateX(50%); bottom: 12px; width: 90%; }
+}

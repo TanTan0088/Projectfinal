@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery List DOM Challenge</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: wheat;   
+      object-fit:fill;  
+    }
+    h1{
+        color: aquamarine;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      padding: 8px;
+      margin: 5px auto;
+      width: 200px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      color: black;
+    }
+    button {
+      margin: 5px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Grocery List</h1>
+  
+  <input type="text" id="itemInput" placeholder="Enter an item">
+  <button id="addBtn">Add Item</button>
+  <button id="highlightBtn">Highlight All</button>
+  <button id="removeBtn">Remove All</button>
+  
+  <ul id="groceryList"></ul>
+
+  <script>
+    const input = document.getElementById('itemInput');
+    const list = document.getElementById('groceryList');
+    const addBtn = document.getElementById('addBtn');
+    const highlightBtn = document.getElementById('highlightBtn');
+    const removeBtn = document.getElementById('removeBtn');
+
+    addBtn.onclick = () => {
+      const value = input.value.trim();
+      if (value) {
+        const li = document.createElement('li');
+        li.textContent = value;
+        list.appendChild(li);
+        input.value = '';
+      } else {
+        alert("Please enter an item!");
+      }
+    };
+
+    highlightBtn.onclick = () => {
+      const items = list.querySelectorAll('li');
+      items.forEach(li => {
+        li.style.backgroundColor = 'yellow';
+      });
+    };
+
+    removeBtn.onclick = () => {
+      list.innerHTML = '';
+    };
+  </script>
+</body>
+</html>

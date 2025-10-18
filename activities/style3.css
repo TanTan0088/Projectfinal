@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+font-family: 'Poppins', sans-serif;
+color:crimson;
+text-align: center;
+}
+
+.dark-mode{
+    background: linear-gradient(130deg, #121212, #2c2c2c);
+    color: blueviolet;
+}
+.img{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+object-fit: cover;
+box-shadow: 0px 0px 10px;
+    
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+   
+}
+
+p{
+    font-size: 1rem;
+}
+
+
+button:hover p{
+    opacity: 1;
+max-height: 100px;
+}
+
+button{
+    border-radius: 10px;
+    font-style: oblique;
+    
+    
+}
+.button:hover{
+    transform: translate(-5px);
+    }

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- hesd -->
+    <header>
+        <div class="logo">My Website</div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="navMenu">
+            <a href="#home">Home</a>
+            <a href="#education">Education</a>
+            <a href="#experience">Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+            <a href="#labs">Lab Activities</a>
+        </nav>
+    </header>
+
+    <!-- home -->
+    <section id="home">
+        <h2>Introduction</h2>
+        <p>Hello! Welcome to my portfolio website where you can learn more about my education, experience, projects, and lab activities. Feel free to get to know me better with all the details I provided. But first thing you should know about me is that I am a <span class="play">Tekken Player</span> who loves playing <span class="Tk">Tekken.</span></p>
+    </section>
+
+    <!-- esu-->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-item1"><strong>Zamboanga Central School SPED Center</strong>
+- Elementary Graduate (2012 - 2018)</div>
+        <div class="education-item2"><strong>Matanao National High School (MNHS)</strong>
+- Senior High STEM Graduate (2021 - 2023)></div>
+        <div class="education-item3"><strong>Zamboanga National High School West (ZNHSW) </strong>
+- Junior High Top Section Graduate (2018 - 2021)</div>
+        <div class="education-item4"><strong>Davao del Sur State College (DSSC)</strong>
+- BSIT (2023 - Present) </div>
+    </section>
+
+    <!-- exp -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="experience-item">
+            <strong>Freelance Web Designer (2024 - Present)</strong>
+            <div class="desc">"I design portfolio and small business websites using HTML, CSS, and JavaScript"</div>
+        </div>
+        <div class="experience-item">
+            <strong>Student Developer (School Projects)</strong>
+            <div class="desc">"Worked on Java-based projects like Airline Booking System and Banking System with MySQL"</div>
+        </div>
+    </section>
+
+    <!-- pro -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-item1">
+            <strong>Bank Management System</strong>
+            <img src="imgss/bankpro.jpg" class="lol">
+            <img src="imgss/bankdash.jpg" class="oler">
+        </div>
+        <div class="project-item2">
+            <strong>Airline Booking System</strong>
+            <img src="imgss/airpro.jpg" class="lols">
+            <img src="imgss/airdash.jpg" class="olers">
+        </div>
+    </section>
+
+    <!-- resu/cv -->
+    <section id="resume">
+        <div class="contres">
+        <h2>Resume</h2>
+        <table>
+            <tr>
+             <td colspan="8"><img src="imgss/formal.jpeg" class="resume-pic"></td>
+            </tr>
+            <tr>
+                <th>Full Name</th>
+                <td>Christian "Tan" M. Cancio</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>christantk7@gmaip.com</td>
+            </tr>
+            <tr>
+                <th>Mobile</th>
+                <td>09266300653</td>
+            </tr>
+            <tr>
+                <th>Course</th>
+                <td>BS in Information Technolpgy</td>
+            </tr>
+            <tr>
+                <th>Career Summary</th>
+                <td>Passionate about building creative websites and learning new web technologies.</td>
+            </tr>
+            <tr>
+                <th>Skills</th>
+                <td>HTML, CSS, JavaScript, UI Design, Java Coding</td>
+            </tr>
+            <tr>
+                <th>Contacts</th>
+                <td>Social links...</td>
+            </tr>
+        </table>
+        </div>
+    </section>
+
+    <!-- lab -->
+    <section id="labs">
+        <h2>Lab Activities</h2>
+        <div class="lab-container">
+            <a href="activities/act1.html" class="lab-item1"><strong>Hover to show</strong></a>
+            <a href="activities/act2.html" class="lab-item2"><strong>Show More Button</strong></a>
+            <a href="activities/act3.html" class="lab-item3"><strong>Toggle Dark/Light Mode</strong></a>
+            <a href="activities/act4.html" class="lab-item4"><strong>Click Me! change button</strong></a>
+            <a href="activities/grocerylist.html" class="lab-item5"><strong>Grocery DOM List</strong></a>
+        </div>
+    </section>
+
+    <!-- foot -->
+    <!-- aside: family pics -->
+    <aside class="family-aside" aria-label="Family pictures">
+        <h3>My Family Pic</h3>
+        <div class="family-grid">
+            <figure class="fam-item shape-circle"><img src="imgss/tan.jpg" alt="Family 1"><figcaption>ME</figcaption></figure>
+            <figure class="fam-item shape-rounded"><img src="imgss/dad.jpg" alt="Family 2"><figcaption>Dad</figcaption></figure>
+            <figure class="fam-item shape-square"><img src="imgss/mom.jpg" alt="Family 3"><figcaption>Mom</figcaption></figure>
+            <figure class="fam-item shape-pill"><img src="imgss/osis.jpg" alt="Family 4"><figcaption>Older Sister</figcaption></figure>
+            <figure class="fam-item shape-diamond"><img src="imgss/ysis.jpg" alt="Family 5"><figcaption>Younger Sister</figcaption></figure>
+            <figure class="fam-item shape-circle"><img src="imgss/lili.webp" alt="Family 6"><figcaption>Wife</figcaption></figure>
+        </div>
+    </aside>
+    <button class="family-toggle" id="familyToggle" aria-expanded="true" aria-controls="family-aside">
+        <span class="arrow">▸</span>
+    </button>
+
+    <footer>
+        Tan's Portfolio | All Rights Reserved 2025
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

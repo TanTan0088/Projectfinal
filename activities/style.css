@@ -1,0 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.img{
+    position: absolute;
+    object-position: center;
+    margin: 10px;
+   left: 100px;
+}
+.card{
+    background-color: blueviolet;
+    width: 320px;
+    height: 190px;
+}
